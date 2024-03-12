@@ -2,5 +2,7 @@
     session_start();
     include("header.html");
 ?>
-Error 404 <br>
-Go back to home page
+<div class="main-body">
+    Error 404 <br>
+    Go back to home page
+</div>

@@ -3,7 +3,7 @@
     include("header.html");
 ?>
 
-<div>
+<div class="main-body">
     About Page
 </div>
 

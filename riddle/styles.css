@@ -6,7 +6,7 @@
 /* Style the header with a grey background and some padding */
 .all-header {
   overflow: hidden;
-  background-color: white;
+  background-color: #35374B;
   padding: 20px 10px;
   display: flex;  
   flex-direction: row;
@@ -14,9 +14,12 @@
   justify-content: space-between;
   max-width: 60rem;
   margin: auto auto;
-}
+  border-radius: 2rem;
+} 
 
 /* logo + name */
+
+
 .web-face {
   display: flex;
   flex-direction: row;
@@ -30,6 +33,8 @@
 /* menu item */
 .menu-item {
   margin-left: 0.5rem;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Style the header links */
@@ -62,7 +67,7 @@
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: #e90b0b;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -78,6 +83,32 @@
 }
 
 /* body */
+
+.main-body{
+  background-color: rgb(155, 9, 9);
+  padding: 20px 10px;
+  display: flex;  
+  flex-direction: row;
+  align-items: center;
+  max-width: 60rem;
+  margin: auto auto;
+  justify-content: space-between;
+}
+.login-body{
+  background-color: rgb(155, 9, 9);
+  padding: 20px 10px;
+  margin: auto auto;
+  align-items: center;    
+  max-width: 60rem; 
+}
+
+.signup-body{
+  background-color: rgb(155, 9, 9);
+  padding: 20px 10px;
+  margin: auto auto;
+  align-items: center;    
+  max-width: 60rem; 
+}
 
 .all-foot{
   background-color: rgb(158, 154, 154);

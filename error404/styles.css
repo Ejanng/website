@@ -1,0 +1,28 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main body */
+.main-body {
+  background-color: #35374b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60rem;
+  margin: auto auto;
+  padding: 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens up to 600 pixels wide (typical mobile devices) */
+  body {
+    font-size: 14px;
+  }
+}

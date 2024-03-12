@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .all-header {
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            background-color: #344955;
+            padding: 1rem 3rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 2rem;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 750;
+            padding: 0.3rem;
+        }
+
+        .web-name {
+            margin: 0;
+            padding-left: 0.5rem;
+        }
+
+        .web-logo {
+            padding-left: 0.5rem;
+            padding-top: 0.2rem;
+        }
+
+        @media only screen and (max-width: 920px) {
+
+            .all-header,
+            .menu-item {
+                padding: 0.32rem;
+                font-size: 0.8rem;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        @media only screen and (min-width: 250px) {
+
+            .all-header,
+            .menu-item {
+                padding: 0.32rem;
+                font-size: 0.8rem;
+                /* Adjust padding for smaller screens */
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-body">
+    <header class="all-header">
+        <div class="web-logo">
+            <img src="images/logo.jpg" alt="Logo" width="70" style="border-radius: 1rem;">
+            <h2 class="web-name">Saint Lois</h2>
+        </div>
+
+        <span class="menu-list">
+            <a href="home.php" class="menu-item">Home</a>
+            <a href="subject.php" class="menu-item">Subject</a>
+            <a href="about.php" class="menu-item">About</a>
+        </span>
+        <span class="menu-list">
+            <a href="contact.php" class="menu-item">Contact</a>
+            <a href="login.php" class="menu-item">Login</a>
+            <a href="signup.php" class="menu-item">Sign Up</a>
+        </span>
+
+    </header>

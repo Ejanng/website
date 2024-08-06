@@ -34,6 +34,3 @@ if (isset($_POST['count'])) {
 } else {
     echo 'No count provided.';
 }
-
-// Test writing to a separate file
-file_put_contents('test.txt', 'Hello, world!');

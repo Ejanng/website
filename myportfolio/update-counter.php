@@ -34,3 +34,4 @@ if (isset($_POST['count'])) {
 } else {
     echo 'No count provided.';
 }
+?>

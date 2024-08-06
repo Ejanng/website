@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const saveButton = document.getElementById("save-btn");
   const messageElement = document.getElementById("message");
 
+/*
   // Load the current count from the server
   fetch("counter.txt")
     .then((response) => response.text())
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       countElement.textContent = text.trim() || "0";
     })
     .catch((error) => console.error("Error fetching count:", error));
+*/
 
   incrementButton.addEventListener("click", () => {
     let currentCount = parseInt(countElement.textContent, 10) || 0;

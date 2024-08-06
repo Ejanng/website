@@ -1,0 +1,92 @@
+/* Calendar Styles */
+.calendar {
+  width: 100%;
+  max-width: 320px;
+  background-color: #fff;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.calendar-header button:hover {
+  background-color: #45a049;
+}
+
+.calendar-header h2 {
+  margin: 0;
+}
+
+.calendar-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.calendar-days div {
+  width: calc(100% / 7);
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar-dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-dates div {
+  width: calc(100% / 7);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.calendar-dates div.inactive {
+  background-color: #f9f9f9;
+  color: #bbb;
+}
+
+.calendar-dates div.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.calendar-dates div:hover {
+  background-color: #f1f1f1;
+}
+
+.calendar-dates div.today {
+  background-color: #ffddc1; /* Light orange or any color to highlight today's date */
+  font-weight: bold;
+}
+
+.activity-log {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const messageElement = document.getElementById("message");
 
   // Load the current count from the server
-  fetch("../get-counter.php")
+  fetch("../calendar/get-counter.php")
       .then((response) => response.text())
       .then((text) => {
           countElement.textContent = text.trim() || "0";
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   saveButton.addEventListener("click", () => {
       let currentCount = parseInt(countElement.textContent, 10) || 0;
 
-      fetch("../update-counter.php", {
+      fetch("../calendar/update-counter.php", {
           method: "POST",
           headers: {
               "Content-Type": "application/x-www-form-urlencoded",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let resetCount = 0;
       countElement.textContent = resetCount;
 
-      fetch("../update-counter.php", {
+      fetch("../calendar/update-counter.php", {
           method: "POST",
           headers: {
               "Content-Type": "application/x-www-form-urlencoded",

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calendar.css">
     <title>ejang.me</title>
 </head>
 
 <body>
     <header>
-        <h1>Website Title</h1>
+        <h1>ejang.me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,12 +19,14 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="qr.html">QR Codes</a></li>
-                <li><a href="codespace.html">Source Code</a></li>
+                <li><a href="codespace.html">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h1>Website is under construction!!!</h1>
+        <h1>Testing...</h1>
         <div class="calendar">
             <div class="calendar-header">
                 <button id="prev-month">&lt;</button>
@@ -48,15 +50,16 @@
             </div>
         </div>
         <div class="counter">
-            <p>Current Count: <span id="count">0</span></p>
+            <h2>Counter Value: <span id="count">0</span></h2>
             <button id="increment-btn">Increment</button>
             <button id="save-btn">Save</button>
-            <p id="message"></p> <!-- Message element for success/error -->
+            <button id="reset-btn">Reset</button>
+            <p id="message"></p>
         </div>
     </main>
 
-    <script src="calendar.js"></script>
-    <script src="counter.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="../counter/js/counter.js"></script>
 
     <footer>
         <p>&copy; 2024 Your Company Name. All rights reserved.</p>

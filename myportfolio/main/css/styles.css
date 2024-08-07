@@ -30,3 +30,14 @@ nav ul li a:hover {
   background-color: #ddd;
   color: black;
 }
+
+/* Basic styling for counter section */
+.counter {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+}

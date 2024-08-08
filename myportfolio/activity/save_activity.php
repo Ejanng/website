@@ -15,17 +15,19 @@ if ($conn->connect_error) {
 $title = $_POST['title'];
 $message = $_POST['message'];
 $date = $_POST['date'];
-$time = $_POST['time'];
+$time = date("H:i:s"); // Get the current time in HH:MM:SS format
 
 // Prepare and bind
 $stmt = $conn->prepare("INSERT INTO activities (title, message, date, time) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssss", $title, $message, $date, $time);
 
-$stmt->execute();
+if ($stmt->execute()) {
+    header("Location: index.html"); // Redirect on success
+    exit();
+} else {
+    echo "Error: " . $stmt->error;
+}
 
 $stmt->close();
 $conn->close();
-
-header("Location: index.html"); // Redirect to the main page
-exit();
 ?>

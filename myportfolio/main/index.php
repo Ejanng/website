@@ -20,6 +20,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="qr.html">QR Codes</a></li>
                 <li><a href="codespace.html">Projects</a></li>
+                <li><a href="activity.php">Activity</a></li>
             </ul>
         </nav>
     </header>

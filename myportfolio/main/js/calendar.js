@@ -57,6 +57,33 @@ function generateCalendar(date) {
   }
 }
 
+function fetchActivitiesForDate(date) {
+  $.ajax({
+    url: "activity/show_activities.php", // Corrected the file path
+    type: "POST",
+    data: { date: date },
+    success: function (response) {
+      console.log(response); // Debug: Check the response in the console
+      const activities = JSON.parse(response);
+      activityLog.innerHTML = `<h3>Activities for ${new Date(date).toLocaleDateString()}</h3>`;
+      if (activities.length > 0) {
+        activities.forEach((activity) => {
+          activityLog.innerHTML += `<div class="activity">
+              <h4>${activity.title}</h4>
+              <p>${activity.message}</p>
+              <p>Date: ${activity.date} Time: ${activity.time}</p>
+            </div>`;
+        });
+      } else {
+        activityLog.innerHTML += "<p>No activities for this date.</p>";
+      }
+    },
+    error: function () {
+      activityLog.textContent = 'An error occurred while fetching activities.';
+    }
+  });
+} 
+
 function showPreviousMonth() {
   currentDate.setMonth(currentDate.getMonth() - 1);
   generateCalendar(currentDate);

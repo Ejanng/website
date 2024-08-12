@@ -1,3 +1,3 @@
 <?php
-    include '../activity/index.php'
+    include '../calendar/activity/index.php'
 ?>
